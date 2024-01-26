@@ -108,7 +108,7 @@ install_docker(){
         echo -e "${Green}Docker 已安装，进行下一步.${Font}"
     else
         echo -e "${Green}Docker 未安装，正在为您安装...${Font}"
-        curl -fsSL https://get.docker.com | bash -s docker
+        curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
         check_result "Docker 安装"
         echo -e "${Green}Docker 安装成功！${Font}"
     fi
